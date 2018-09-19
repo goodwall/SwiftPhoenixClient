@@ -115,7 +115,7 @@ public class Socket {
     /// Initializes a Socket
     ///
     /// - parameter connection: Websocket connection to maintain
-    init(connection: WebSocket) {
+    public init(connection: WebSocket) {
         self.connection = connection
         self._endpoint = connection.currentURL
         self.reconnectTimer = PhxTimer(callback: { [weak self] in
